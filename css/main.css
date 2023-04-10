@@ -1,0 +1,18 @@
+.left-box {
+    width : 100px;
+    height : 100px;
+    float : left;
+    color: black;
+}
+.right-box {
+    width : 100px;
+    height : 100px;
+    float : left;
+    color: red;
+}
+.footer {
+    clear : both
+}
+.box {
+    width : 80%
+}
