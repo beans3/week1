@@ -1,0 +1,46 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/shoes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(70%);
+    padding: 1px;
+    position: relative;
+}
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 250px;
+    text-align: center;
+}
+.main-content {
+    width: 60%;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+.main-button {
+    position: absolute;
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    right: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.overlap-box {
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    background: hotpink;
+    position: relative;
+}
