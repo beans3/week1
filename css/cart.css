@@ -1,0 +1,133 @@
+img {
+    width: 50%;
+    height: 50%;
+}
+body {
+    margin: 0;
+    font-family: 'NanumSquareR';
+    font-weight: 800;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+table th:nth-child(2) {
+    width: 400px;
+}
+
+table, th, td {
+    border: 2px solid lightsteelblue;
+}
+
+td {
+    background-color: white;
+    text-align: center;
+    width: 10%;
+    height: 10%;
+}
+
+.f-small {
+    font-size: 12px;
+}
+
+.f-mid {
+    font-size: 16px;
+}
+
+.f-lg {
+    font-size: 20px;
+}
+
+.container {
+    width: 800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 70px;
+    background-color: lightsteelblue;
+}
+
+.table-box {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.bottom-box {
+    width: 100%;
+    margin-top: 10px
+}
+
+.edit-button {
+    width: 50%;
+    float: left;
+}
+
+.payment-button {
+    width: 30%;
+    height: 50px;
+    float: right;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 1em;
+}
+
+.buy-button {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color:white;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: chocolate;
+}
+.buy-button:focus {
+    background-color: grey;
+}
+.buy-button:active {
+    background-color: brown;
+}
+
+
+.input-test {
+    font-size: 20px;
+}
+.input-test:focus {
+    border: 2px solid red;
+}
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:link {
+    color: violet;
+}
+
+.custom-link:visited {
+    color: black;
+}
+
+.main-btn {
+    padding: 15px;
+    font-size: 20px;
+    border: none; 
+    cursor: pointer;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
