@@ -1,0 +1,96 @@
+div {
+    box-sizing: border-box;
+}
+
+.profile {
+    width: 80%;
+    height: 300px;
+    padding: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.profile-left {
+    float: left;
+}
+.profile-img {
+    float: left;
+    padding: 30px
+}
+.profile-img i {
+    font-size: 200px;
+}
+.profile-info {
+    float: left;
+    padding: 30px;
+    text-align: left;
+    vertical-align: middle;
+}
+.profile-right {
+    float: right;
+    padding: 30px;
+}
+.list-key {
+    float: left;
+    text-align: left;
+    margin-right: 30px;
+}
+.list-value {
+    float: left;
+    text-align: left;
+    line-height: 27px;
+}
+.location-info span {
+    color: #6fbaf8;
+    font-weight: 900;
+}
+.btn-contact {
+    background-color: #6fbaf8;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.location-info i {
+    font-size: 20px;
+    color: #6fbaf8;
+}
+.work-content {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.work-content-left {
+    float: left;
+    width: 20%;
+    box-shadow: #6fbaf8;
+}
+.work-content-about {
+    float: left;
+    width: 60%;
+}
+.work-content-right {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.about-content p {
+    width: 80%;
+}
+.find-content i {
+    font-size: 100px;
+    color: #6fbaf8;
+}
+.circle-tag {
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+    padding: 2px 10px 4px 10px;
+    margin-right: 2px;
+}
