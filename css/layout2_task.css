@@ -261,3 +261,22 @@ p, h4, h3, h2, h1, span {
 .overlay:hover {
     opacity: 1;
 }
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+.overlay-wrap:hover .overlay-black{
+    margin-top: 50%;
+}
