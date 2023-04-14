@@ -1,3 +1,4 @@
+/* 폰트 */
 @font-face {
     font-family: 'NanumSquareR';
     src: url('../font/NanumSquareR.woff');
@@ -16,7 +17,16 @@ div, input, textarea {
 body {
     margin: 0px;
 }
-
+/* 로고 */
+.logo {
+    color: indianred;
+    width: 100px;
+    align-items: center;
+    padding:10px;
+    text-align: center;
+    cursor: pointer;
+}
+/* 메인 배너 */
 .main-background {
     width: 100%;
     height: 500px;
@@ -28,12 +38,14 @@ body {
     padding: 1px;
     position: relative;
 }
+/* 메인 배너 타이틀 */
 .main-title {
     color: white;
     font-size: 40px;
     margin-top: 150px;
     text-align: center;
 }
+/* 메인 배너 텍스트 */
 .main-content {
     width: 60%;
     color: white;
@@ -44,6 +56,7 @@ body {
     right: 0;
     margin: auto;
 }
+/* 메인 배너 더보기 버튼 */
 .main-button {
     padding: 15px;
     font-size: 20px;
@@ -58,6 +71,7 @@ body {
     width: 150px;
     z-index: 1;
 }
+/* 배너에 겹치는 텍스트 박스 */
 .overlap-box {
     width: 80%;
     max-width: 600px;
@@ -72,11 +86,14 @@ body {
     margin: auto;
 }
 
+/* contact 폼 */
 .form-background {
     background-color: black;
     padding: 30px;
 }
 
+
+/* contact 폼 박스 */
 .form-box {
     background-color: white;
     padding: 30px;
@@ -102,6 +119,7 @@ textarea {
     display: block;
 }
 
+/* contact 체크박스 */
 input[type=checkbox] {
     display: inline-block;
     width: 15px;
@@ -112,19 +130,15 @@ input[type=checkbox] {
     float: left;
     padding: 10px;
 }
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
 
+/* SEND, subscribe */
 .bottom-box {
     width: 100%;
     display: inline-block;
-}
-
-.send-button {
-    float: right;
-    background-color: yellow;
-}
-
-.w-100 {
-    width: 100%;
     padding: 10px;
 }
 
@@ -132,6 +146,8 @@ input[type=checkbox] {
     width: 100%;
     padding: 10px;
 }
+
+/* 인푹 박스 공통 */
 .form-input {
     width: 100%;
     padding: 10px;
@@ -139,29 +155,50 @@ input[type=checkbox] {
     border: 1px solid black;
     border-radius: 5px;
 }
-.yellow-button {
+
+/* SEND 버튼 */
+.send-button {
     padding: 10px;
     display: block;
     margin-left: auto;
+    border: none;
+    background-color: indianred;
+    border-radius: 10px;
+    color: white
 }
 
+/* window에서 글씨 더 부드럽게 보이는 방법 */
 p, h4, h3, h2, h1, span {
     transform: rotate(0.03);
 }
 
+/* 상단 메뉴 */
 .flex-continer {
     display: flex;
-    height: 50px;
+    height: 100px;
     align-items: center;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
 }
 
+/* 상단 메뉴(login, join) */
 .flex-item {
     width: 100px;
     align-items: center;
+    padding:10px;
+    text-align: center;
+    cursor: pointer;
 }
 
+.flex-item:hover {
+    background-color: pink;
+}
+
+.flex-iteme:active {
+    background-color: grey;
+}
+
+/* 상단 메뉴 중간 빈 공간 */
 .empty-item {
     flex-grow: 1;
 }
@@ -177,7 +214,7 @@ p, h4, h3, h2, h1, span {
     padding: 10px;
     margin: 10px;
 }
-
+/* 중간 아이콘 배너 */
 .product-container {
     width: 100%;
     max-width: 800px;
@@ -186,11 +223,79 @@ p, h4, h3, h2, h1, span {
     margin-bottom: 50px;
     text-align: center;
 }
+/* 중간 아이콘 배너 div */
 .product-container div {
     float: left;
     width: 25%;
 }
+/* 중간 아이콘 배경 동그라미 */
+.product-container i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 20px;
+}
+/* 상품 배경 */
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+/* 상품 전체 박스 */
+.shop-container {
+    display: flex;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+/* 상품 단일 박스 */
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+/* 상품 이미지 */
+.shop-item img {
+    width: 100%;
+    display: block;
+}
 
+/* 마우스 hover 전 */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 1s;
+}
+/* 마우스 hover 변경 내용 */
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 마우스 hover 후 */
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+.overlay-wrap:hover .overlay-black{
+    margin-top: 50%;
+}
+
+/* 반응형 */
 @media screen and (max-width: 1200px) {
     .main-title {
         font-size: 30px;
@@ -220,63 +325,4 @@ p, h4, h3, h2, h1, span {
         display: flex;
         flex-direction: column;
     }
-}
-.product-container i {
-    background-color: burlywood;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    padding-top: 25px;
-    box-sizing: border-box;
-    color: white;
-    margin-top: 20px;
-}
-.shop-bg {
-    background-color: #eee;
-    padding: 20px;
-}
-.shop-container {
-    display: flex;
-    max-width: 800px;
-    width: 90%;
-    margin: auto;
-}
-.shop-item {
-    width: 33%;
-    padding: 10px;
-}
-.shop-item img {
-    width: 100%;
-    display: block;
-}
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: all 1s;
-}
-
-.overlay:hover {
-    opacity: 1;
-}
-
-.overlay-wrap {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.overlay-black {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 100%;
-    transition: all 1s;
-}
-
-.overlay-wrap:hover .overlay-black{
-    margin-top: 50%;
 }

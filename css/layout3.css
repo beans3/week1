@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+}
 div {
     box-sizing: border-box;
 }
 
+/* 메인 배너 배경 */
 .main-banner {
     width: 100%;
     height: 550px;
@@ -17,20 +21,24 @@ div {
     width: 30%;
     padding: 50px;
 }
+/* 메인 배너 이미지 */
 .main-iphone {
     width: 400px;
     float: right;
     margin-top: 95px;
   }
+/* 중간 텍스트 */
 .middle-content {
     width: 80%;
-    height: 200px;
+    height: 300px;
     margin: auto;
     left: 0;
     right: 0;
+    margin-top: 100px;
     text-align: center;
+    vertical-align: middle;
 }
-
+/* 중간 아이콘 배너 */
 .offer-content {
     width: 100%;
     height:300px;
@@ -41,7 +49,7 @@ div {
     text-align: center;
     padding: 30px
 }
-
+/* 하단 배너 */
 .icon-content {
     width: 25%;
     height: 300px;
@@ -49,7 +57,7 @@ div {
     padding: 20px;
     text-align: center;
 }
-
+/* 하단 배너 아이콘 */
 .icon-content i {
     background-color: white;
     width: 100px;
@@ -59,13 +67,17 @@ div {
     box-sizing: border-box;
     color: mediumaquamarine;
 }
-
+/* 하단 배너 텍스트 */
 .copy-content {
     margin: auto;
     left: 0;
     right: 0;
     text-align: center;
+    height: 200px;
+    vertical-align: middle;
+    margin-top: 100px;
 }
+/* 하단 배너 전체 박스 */
 .square-content {
     margin: auto;
     left: 0;
@@ -73,18 +85,19 @@ div {
     right: 0;
     width: 80%;
 }
-
+/* 하단 배너 단일 요소 */
 .square-item {
     width: 50%;
     height: 50%;
     float: left;
     color: white;
+    padding-left: 20px;
 }
 
 .square-item p {
     width: 70%;
 }
-
+/* 하단 배너 이미지 */
 .one {
     background-image: url('../img/portfolio-1.jpg');
     background-size: cover;
@@ -109,20 +122,23 @@ div {
     background-repeat: no-repeat;
     background-position: right;
 }
+
+/* 소셜 박스 */
 .social-content {
     margin: auto;
     left: 0;
     right: 0;
-    height: 100px;
+    margin-top: 100px;
+    height: 300px;
     padding: 30px;
     text-align: center;
 }
-
+/* 소셜 아이콘 */
 .social-content i {
     text-align: center;
     padding: 30px;
 }
-
+/* 더보기(more) 버튼 */
 .btn-more {
     background-color: #eee;
     border: none;
@@ -130,6 +146,10 @@ div {
     padding: 20px;
     border-radius: 15px;
     cursor: pointer;
+}
+/* 상단 더보기(more) 버튼 포지션 */
+.btn-banner {
+    position: absolute;
 }
 
 .btn-more:hover {
@@ -139,11 +159,7 @@ div {
 .btn-more:active {
     background-color: grey;
 }
-
-.btn-banner {
-    position: absolute;
-}
-
+/* 반응형 */
 @media screen and (max-width : 992px) {
     .main-iphone {
       width: 260px;
